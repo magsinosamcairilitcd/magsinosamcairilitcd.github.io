@@ -1,0 +1,63 @@
+		.picture_ko{
+			float: right;
+			padding-right:92px;
+		}
+		
+		h1{
+			margin: 10px 1px 15px 50px;
+			color: #2E312C;
+			font-family: Bahnschrift Condensed;			
+			font-style:bold;
+			text-transform: uppercase;
+			font-size: 3.125em;
+		}
+		
+		h2{
+			letter-spacing: 2px;
+			margin: 10px 1px 15px 50px;
+			background-color: #9B97A1;
+			color: #2E312C;
+			font-family: Bahnschrift Condensed;
+			font-style:oblique;
+			font-variant: small-caps;	
+			font-size:1.875em;
+			word-spacing: 10px;
+			text-transform: uppercase;
+			margin-right: 90px;
+		}
+		
+		h5{
+			font-family: Bahnschrift SemiBold Condensed, sans-serif;
+			letter-spacing: 1px;
+			font-style: bold;
+			font-size: 1.20em;
+			margin: 10px 1px 15px 50px;
+		}
+		
+		h6{
+			font-family: Bahnschrift Condensed;
+			font-size: 0.89em;
+			word-spacing: 1px;
+			font-weight: lighter;
+			margin: 10px 1px 15px 50px;
+		}
+		
+		body{
+			color:#2E312C;background-color:#C9C7CE;
+		}
+		
+		p{
+			font-family: Bahnschrift Condensed;
+			font-size: 1.20em;
+			word-spacing: 1px;
+			margin: 10px 1px 15px 50px;
+			margin-right: 90px;
+		}
+		
+		ul{
+			font-family: Bahnschrift Condensed;
+			font-size: 1.20em;
+			margin: 10px 1px 15px 50px;
+			margin-right: 90px;
+		}
+		
