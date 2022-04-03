@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" href="../MEDIAS/world.png" type="image/x-icon">
+	<meta chartset="utf-8">
+	<meta name="author" content="SAM CAIRIL C. MAGSINO">
+	<base target="place" />
+	<title>Places I want to Visit</title>
+	<script language="JavaScript">
+			function writeText(txt) {
+				document.getElementById ("desc").innerHTML=txt;
+		}
+	
+	
+			function dissolveText(txt) {
+				document.getElementById ("desc").innerHTML=txt;
+    
+			}
+	</script>
+	<style>
+		body{
+			background-color:#C9C7CE;
+			color: #2E312C;
+			font-family:Bahnschrift Condensed;
+			font-size:2em;
+			text-align:center;
+		}
+		h1{
+			font-family: Bahnschrift Condensed;
+			font-size: 4.125em;
+			background-color: #9B97A1;
+			text-transform:upppercase;
+			word-spacing: 10px;
+			text-shadow: 6px 7px 6px #5F5C65;
+			text-align: center;
+		}
+		p#desc{
+			font-family:Bahnschrift Condensed;
+			font-size:30px;
+			color:#2E312C;
+			text-align:center;		
+		}
+		a:link{
+			color: #C9C7CE;
+			background-color:#2E312C;
+			text-decoration:none;
+			border: 5px solid #2E312C;
+		}
+		a:visited{
+			color: #C9C7CE;
+			background-color:#2E312C;
+			border: 5px solid #2E312C;
+		}
+		a:hover{
+			color: #2E312C;
+			background-color:#ACA7b8;
+			font-size:.95em;
+			border: 5px solid #ACA7b8;
+			cursor: grab;
+		}
+		a:active{
+			color: #C9C7CE;
+			background-color:#2E312C;
+			border: 5px solid #2E312C;
+		}
+	</style>
+</head>
+
+<body>
+<br><br>
+<h1>Places to Visit</h1>
+<br>
+<div align="center">
+	<img src="../MEDIAS/places i want to visit.png" usemap="#places">
+	<map name="places">
+		<area shape="rect" coords="3,3,898,135" href="GrandCanyon.html" title="Grand Canyon" onMouseOver="writeText('The scenic views of the Grand Canyon will take your breath away.')" onMouseOut="dissolveText('');"/>
+		
+		<area shape="rect" coords="3,149,897,283" href="MachuPicchu.html" title="Machu Picchu" onMouseOver="writeText('This ancient Incan citadel, making it one of the most beautiful places to visit')" onMouseOut="dissolveText('');"/>
+		
+		<area shape="rect" coords="4,444,897,573" href="Pamukkale.html" title="Pamukkale" onMouseOver="writeText('Known for its snow-white limestone and blue waters, this thermal spring is one of the coolest places in the world.')" onMouseOut="dissolveText('');"/>
+		
+		<area shape="rect" coords="2,588,897,719" href="Fushimi.html" title="Fushimi Inari Taisha" onMouseOver="writeText('Fushimi Inari Taisha is the most important Shinto shrine')" onMouseOut="dissolveText('');"/>
+		
+		<area shape="rect" coords="3,734,898,857" href="Palace.html" title="Changdeokgung Palace" onMouseOver="writeText('Changdeokgung Palace, with Huwon Secret Garden, has been one of the most tourist-attracting historic sites in Seoul')" onMouseOut="dissolveText('');"/>
+	</map>
+</div>
+	
+<div>
+<p id="desc"></p>
+</div>
+	
+	<br><br><br>
+	<div align="right">
+	<a href="../landing.html">Go back to Home Page</a>
+	</div>
+	
+</body>
+</html>
