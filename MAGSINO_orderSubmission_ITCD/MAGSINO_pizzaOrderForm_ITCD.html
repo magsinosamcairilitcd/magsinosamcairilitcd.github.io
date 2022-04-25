@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Order Form</title>
+   <meta charset="utf-8">
+   <meta name="author" content="SAM MAGSINO">
+   <link rel="icon" href="MAGSINO_IMAGES_ITCD/restaurant.png" type="image/x-icon">
+   <link rel="stylesheet" type="text/css" href="MAGSINO_IMAGES_ITCD/MAGSINO_pizzaOrderForm_ITCD.css">
+</head>
+
+<body>
+	<h1>Jubilee</h1>
+	
+	<form action="/action_submit">
+	
+		<fieldset>
+			<p>Fill Out</p>
+			<div class="full_name">
+                <label for="fullname"><img src="MAGSINO_IMAGES_ITCD/teenager.png" width="30px" height="30px">Name:</label>
+                <input type="text" name="fullname" id="fullname" placeholder="Type your Full Name" required>
+            </div>
+			
+			<br>
+			
+			<div class="full_address">
+                <label for="full_address"><img src="MAGSINO_IMAGES_ITCD/address.png" width="30px" height="30px">Address:</label>
+                <input type="text" name="full_address" id="full_address" placeholder="Type your Full Address" required>
+            </div>
+			
+			<br>
+			
+			<div class="full_contact">
+                <label for="full_contact"><img src="MAGSINO_IMAGES_ITCD/call.png" width="30px" height="30px">Contact Number:</label>
+                <input type="text" name="" id="full_contact" placeholder="Type your Contact Number" required>
+            </div>
+			
+			<br>
+			
+			<div class="email_address">
+                <label for="email_address"><img src="MAGSINO_IMAGES_ITCD/email.png" width="30px" height="30px">E-mail:</label>
+                <input type="text" name="email_address" id="email_address" placeholder="Type your E-mail" required>
+            </div>
+			
+			<br>
+			
+			<div class="pick_up">
+                <label for="fullname"><img src="MAGSINO_IMAGES_ITCD/take-away.png" width="30px" height="30px">Pick-up:</label>
+                <input type="text" name="pick_up" id="pick_up" placeholder="Pick-up place" required>
+            </div>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<p id="choices">FOODS</p>
+			
+			<div align="center">
+				<img src="MAGSINO_IMAGES_ITCD/choices.png" alt="menu" usemap="#choices">
+			</div>
+			
+			<map name="choices">
+				<area shape="rect" coords="7,0,116,129" href="#fries"/>
+				<area shape="rect" coords="126,0,253,130" href="#burger"/>
+				<area shape="rect" coords="261,0,376,128" href="#drinks"/>
+				<area shape="rect" coords="386,5,499,130" href="#pasta"/>
+			</map>
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<p id="fries">FRIES</p>
+            <div align="center" class="food">
+                <img src="MAGSINO_IMAGES_ITCD/fried-potatoes.png" alt="FRIES">
+            </div>		
+			
+			<h3>What's your flavor?</h3>
+            <div>
+                <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                <label for="cheese"> Cheese </label><br>
+            </div>
+
+			<div>
+                <input type="checkbox" id="barbecue" name="barbecue" value="barbecue">
+                <label for="barbecue"> Barbecue </label><br>
+            </div>
+			
+			<div>
+                <input type="checkbox" id="cheddar" name="cheddar" value="cheddar">
+                <label for="cheddar"> Cheddar </label><br>
+            </div>
+			
+			<div>
+                <input type="checkbox" id="sourcream" name="sourcream" value="sourcream">
+                <label for="sourcream"> Sour Cream </label><br>
+            </div>
+			
+			<div>
+                <input type="checkbox" id="chilibbq" name="chilibbq" value="chilibbq">
+                <label for="chilibbq"> Chili Barbecue </label><br>
+            </div>
+			
+			<h3>What's your Size?</h3>
+			<select id="small" name="size">
+			<option value="office" >Small</option>
+			<option value="office" >Medium</option>
+			<option value="office" >Large</option>
+			</select>
+			<br><br>
+            <div class="quantity">
+                <label for="number_fries">Quantity:</label>
+                <input type="number" name="number_fries" id="number_fries" max="100" min="1"required>
+            </div>
+			
+			<br><br>
+		
+		</fieldset>	
+		
+		<br>
+		
+		<fieldset>
+			<p id="burger">BURGER</p>
+            <div align="center" class="food">
+                <img src="MAGSINO_IMAGES_ITCD/hamburger.png" alt="BURGER">
+            </div>				
+			
+			<h3>What's your Bun?</h3>
+            <div>
+                <input type="radio" id="regular" name="regular" value="regular">
+                <label for="regular">Regular Bun</label>
+				<input type="radio" id="toasted" name="toasted" value="toasted">
+				<label for="toasted">Toasted Bun</label>
+            </div>
+		
+			<h3>What's your Add Ons?</h3>
+            <div>
+                <input type="checkbox" id="BBQ Sauce" name="BBQ Sauce" value="BBQ Sauce">
+                <label for="BBQ Sauce"> BBQ Sauce </label><br>
+            </div>	
+			
+			<div>
+                <input type="checkbox" id="mushrooms" name="mushrooms" value="mushrooms">
+                <label for="mushrooms"> Mushrooms</label><br>
+            </div>
+
+			<div>
+                <input type="checkbox" id="bacon" name="bacon" value="bacon">
+                <label for="bacon"> Bacon </label><br>
+            </div>
+
+			<div>
+                <input type="checkbox" id="mayonnaise" name="mayonnaise" value="mayonnaise">
+                <label for="mayonnaise"> Mayonnaise </label><br>
+            </div>
+
+			<div>
+                <input type="checkbox" id="pickles" name="pickles" value="pickles">
+                <label for="pickles"> Pickles </label><br>
+            </div>
+			
+			<div>
+                <input type="checkbox" id="mustard" name="mustard" value="mustard">
+                <label for="mustard"> Mustard </label><br>
+            </div>
+			
+			<div>
+                <input type="checkbox" id="lettuce" name="lettuce" value="lettuce">
+                <label for="lettuce"> Lettuce </label><br>
+            </div>
+			
+			<div>
+                <input type="checkbox" id="tomatoes" name="tomatoes" value="tomatoes">
+                <label for="tomatoes"> Tomatoes </label><br>
+            </div>
+
+			<div>
+                <input type="checkbox" id="onions" name="onions" value="onions">
+                <label for="onions"> Onions </label><br>
+            </div>
+			
+			<div>
+                <input type="checkbox" id="ketchup" name="ketchup" value="ketchup">
+                <label for="ketchup"> Ketchup </label><br>
+            </div>
+			<br><br>
+            <div class="quantity">
+                <label for="number_burger">Quantity:</label>
+                <input type="number" name="number_burger" id="number_burger" max="100" min="1"required>
+            </div>
+
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<p id="drinks">DRINKS</p>
+            <div align="center" class="food">
+                <img src="MAGSINO_IMAGES_ITCD/soft-drink.png" alt="DRINKS">
+            </div>	
+		
+			<h3>What are your Drinks?</h3>
+			<div>
+				<input type="checkbox" id="coke" name="coke" value="coke">
+				<label for="coke"> Coke </label><br>
+			</div>
+			
+			<div>
+				<input type="checkbox" id="sprite" name="sprite" value="sprite">
+				<label for="sprite"> Sprite </label><br>
+			</div>
+			
+			<div>
+				<input type="checkbox" id="royal" name="royal" value="royal">
+				<label for="royal"> Royal </label><br>
+			</div>
+			
+			<div>
+				<input type="checkbox" id="pineapple" name="pineapple" value="pineapple">
+				<label for="pineapple"> Pineapple </label><br>
+			</div>
+			
+			<div>
+				<input type="checkbox" id="nestea" name="nestea" value="nestea">
+				<label for="nestea"> Nestea </label><br>
+			</div>
+			
+			<div>
+				<input type="checkbox" id="water" name="water" value="water">
+				<label for="water"> Water </label><br>
+			</div>
+			
+			<h3>What's your Size?</h3>
+			<select id="small" name="size">
+			<option value="office" >Small</option>
+			<option value="office" >Medium</option>
+			<option value="office" >Large</option>
+			</select>
+			<br><br>
+            <div class="quantity">
+                <label for="number_drinks">Quantity:</label>
+                <input type="number" name="number_drinks" id="number_drinks" max="100" min="1"required>
+            </div>
+		
+			<br><br>
+		
+		</fieldset>
+		
+		<br>
+		
+		<fieldset>
+			<p id="pasta">PASTA</p>
+            <div align="center" class="food">
+                <img src="MAGSINO_IMAGES_ITCD/spaghetti.png" alt="PASTA">
+            </div>
+
+			<h3>What's your Type?</h3>
+            <div>
+                <input type="radio" id="spaghetti" name="spaghetti" value="spaghetti">
+                <label for="reguspaghettilar">Spaghetti</label>
+				<input type="radio" id="carbonara" name="carbonara" value="carbonara">
+				<label for="carbonara">Carbonara</label>
+				<input type="radio" id="tuna pesto" name="tuna pesto" value="tuna pesto">
+				<label for="tuna pesto">Tuna Pesto</label>
+				<input type="radio" id="lasagna" name="lasagna" value="lasagna">
+				<label for="lasagna">Lasagna</label>&nbsp;
+				<input type="radio" id="pad thai" name="pad thai" value="pad thai">
+				<label for="pad thai">Pad Thai</label>
+            </div>
+			
+			<h3>What's your Add Ons?</h3>
+            <div>
+                <input type="checkbox" id="Sauce" name="Sauce" value="Sauce">
+                <label for="Sauce"> Extra Sauce </label><br>
+            </div>
+
+            <div>
+                <input type="checkbox" id="cheese" name="cheese" value="cheese">
+                <label for="cheese"> Extra Cheese </label><br>
+            </div>
+			
+            <div>
+                <input type="checkbox" id="meat" name="meat" value="meat">
+                <label for="meat"> Extra Meat </label><br>
+            </div>
+
+            <div>
+                <input type="checkbox" id="spice" name="spice" value="spice">
+                <label for="spice"> Spicy </label><br>
+            </div>
+			<br><br>
+            <div class="quantity">
+                <label for="number_pasta">Quantity:</label>
+                <input type="number" name="number_pasta" id="number_pasta" max="100" min="1"required>
+            </div>
+		
+		</fieldset>	
+		
+		<br>
+		
+		<fieldset>
+			<p id="pasta">CHECK-OUT</p>	
+			<fieldset>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="MAGSINO_IMAGES_ITCD/delivery.png" width="50px" height="50px" alt="delivery" class="icon"><label for="delivery"><input type="radio" name="method" id="delivery">Delivery</label>
+
+				 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="MAGSINO_IMAGES_ITCD/take-away.png" width="50px" height="50px" alt="delivery" class="icon"><label for="delivery"><input type="radio" name="method" id="delivery">Pick-up</label>
+			</fieldset>
+			
+			<br>
+			
+			<input type="submit" value="Submit Order">
+            <input type="reset" value="Reset">
+			<br>
+		</fieldset>
+	
+	<br><br>
+	</form>
+</body>
